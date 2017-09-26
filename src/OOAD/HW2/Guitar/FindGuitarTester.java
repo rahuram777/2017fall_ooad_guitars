@@ -1,12 +1,18 @@
+/**
+ * Class: Object Oriented Analysis and Design
+ * Professor: Orlando Montalvo
+ * Assignment: 2
+ * Students: Raghuram Rangaraju (@01377909), Vihar kodakandla (@01392814)
+ */
+
 package OOAD.HW2.Guitar;
 import java.util.*;
 import OOAD.HW2.Guitar.GuitarSpec;
 import OOAD.HW2.Guitar.GuitarSpec.*;
-
 /**
- * Class: Object Oriented Analysis and Design
- * Assignment: 2
- * Students: Raghuram Rangaraju (@01377909), Vihar kodakandla (@01392814)
+ * 
+ * Prints the list of guitars with user's specifications( builder, price, backwood, topwood ,model).
+ *
  */
 public class FindGuitarTester {
 
@@ -51,7 +57,7 @@ public class FindGuitarTester {
 	/**
 	 * initializeInventory adds up the new guitars into the inventory.
 	 *
-	 * @param inventory
+	 * @param inventory Inventory object
 	 */
 	private static void initializeInventory(Inventory inventory) {
 

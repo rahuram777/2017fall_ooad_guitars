@@ -1,5 +1,6 @@
 /**
  * Class: Object Oriented Analysis and Design
+ * Professor: Orlando Montalvo
  * Assignment: 2
  * Students: Raghuram Rangaraju (@01377909), Vihar kodakandla (@01392814)
  */
@@ -7,7 +8,7 @@
 package OOAD.HW2.Guitar;
 
 /**
- * This class implements the properties and functions of Guitar.
+ * Guitar class implements the properties and functions of Guitar.
  *
  */
 public class Guitar {
@@ -18,9 +19,9 @@ public class Guitar {
 
 	/**
 	 * Constructor for the class Guitar with the following arguments
-	 * @param serialNumber
-	 * @param price
-	 * @param guitarSpec
+	 * @param serialNumber Guitar serial number
+	 * @param price Guitar price
+	 * @param guitarSpec Guitar specs
 	 */
 	public Guitar(String serialNumber, double price, 
 			GuitarSpec guitarSpec) {
@@ -46,8 +47,6 @@ public class Guitar {
 	}
 
 	/**
-	 * Function sets the new price
-	 *
 	 * @param newPrice
 	 *            
 	 */

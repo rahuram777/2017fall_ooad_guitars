@@ -1,5 +1,6 @@
 /**
  * Class: Object Oriented Analysis and Design
+ * Professor: Orlando Montalvo
  * Assignment: 2
  * Students: Raghuram Rangaraju (@01377909), Vihar kodakandla (@01392814)
  */
@@ -7,11 +8,16 @@
 package OOAD.HW2.Guitar;
 
 /**
- * This class implements properties and functions of GuitarSpec. And enum for the attributes
+ *  GuitarSpec implements properties and match function of GuitarSpec. And enum for some of the guitar attributes. 
  * 
  */
 public class GuitarSpec {
 
+	/**
+	 * BackWoodandtopWood enum is defined for the Guitar wood types
+	 * 
+	 */
+	
     public enum BackWoodandtopWood {
         IndianRosewood, BrazilianRosewood, Mahogany, Maple, Cocobolo, Cedar, Adirondack, Alder, Sitka;
 
@@ -41,6 +47,10 @@ public class GuitarSpec {
         }
     }
 
+    /**
+	 * Builder enum is defined for the Guitar builder types
+	 * 
+	 */
     public enum Builder {
         Fender, Martin, Gibson, Collings, Olson, Ryan, PRS;
 
@@ -67,6 +77,11 @@ public class GuitarSpec {
         }
     }
 
+    /**
+   	 * Type enum is defined for the Guitar types
+   	 * 
+   	 */
+    
     public enum Type {
         Acoustic, Electric;
 
@@ -90,11 +105,11 @@ public class GuitarSpec {
 
     /**
      * Constructor for the class GuitarSpec with the following arguments
-     * @param builder
-     * @param backWood
-     * @param topWood
-     * @param type
-     * @param model
+     * @param builder Guitar builder
+     * @param backWood Guitar backwood
+     * @param topWood Guitar topwood
+     * @param type Guitar type
+     * @param model Guitar model
      */
     public GuitarSpec(Builder builder, BackWoodandtopWood backWood,
             BackWoodandtopWood topWood, Type type, String model) {
@@ -146,8 +161,8 @@ public class GuitarSpec {
     }
 
     /**
-     * Checks the specs if anyone attribute matches returns true. else false
-     * @param specs
+     * Checks the specs of the guitar. If anyone attribute matches it will return true. else false
+     * @param specs Guitar specs
      * @return true or false
      */
     public boolean guitarMatch(GuitarSpec specs) {
@@ -156,5 +171,4 @@ public class GuitarSpec {
         }
         return false;
     }
-
 }
